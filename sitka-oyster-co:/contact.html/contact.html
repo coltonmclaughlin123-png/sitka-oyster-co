@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Sitka Oyster Co.</title>
+  <meta name="description" content="Contact Sitka Oyster Co. for wholesale inquiries and availability." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="logo" aria-hidden="true"></span>
+      <span>
+        Sitka Oyster Co.
+        <small>Farmed in Sitka, Alaska</small>
+      </span>
+    </a>
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-title">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Wholesale inquiries, availability, and general questions — reach out anytime.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <!-- FREE option: mailto form (opens user's email client) -->
+        <form class="form" action="mailto:YOUR_EMAIL_HERE" method="post" enctype="text/plain">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="Name" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" autocomplete="email" required />
+          </div>
+          <div style="grid-column:1/-1">
+            <label for="subject">Subject</label>
+            <input id="subject" name="Subject" required />
+          </div>
+          <div style="grid-column:1/-1">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" required></textarea>
+          </div>
+          <div style="grid-column:1/-1; display:flex; gap:12px; flex-wrap:wrap;">
+            <button class="btn primary" type="submit">Send message</button>
+            <a class="btn" href="mailto:YOUR_EMAIL_HERE">Email directly</a>
+          </div>
+        </form>
+
+        <p style="margin:14px 0 0; color: var(--muted);">
+          Replace <strong>YOUR_EMAIL_HERE</strong> with your business email. If you want the form to submit without opening
+          an email app, I can swap this to a free form service (Netlify Forms or Formspree) in 2 minutes.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <div>© <span id="year"></span> Sitka Oyster Co.</div>
+    <div>
+      <a href="gallery.html">Gallery</a> · <a href="about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
